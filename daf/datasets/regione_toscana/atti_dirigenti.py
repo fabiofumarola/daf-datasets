@@ -61,7 +61,7 @@ def load_data(path='data_dirigenti.npz', num_words=None, skip_top=0,
     have simply been skipped.
     """
     path = get_file(path,
-                    origin='https://cs2.cloudspc.it:8079/swift/v1/daf-datasets/data_dirigenti.npz',
+                    origin='https://github.com/fabiofumarola/daf-datasets/raw/master/data/data_dirigenti.npz',
                     file_hash='c981a46aeb147cc22eb7b151abdb479f')
 
     with np.load(path) as f:
@@ -128,7 +128,7 @@ def get_word_index(path='data_dirigenti_word_index.json'):
         The word index dictionary.
     """
     path = get_file(path,
-                    origin='https://cs2.cloudspc.it:8079/swift/v1/daf-datasets/data_dirigenti_word_index.json',
+                    origin='https://github.com/fabiofumarola/daf-datasets/raw/master/data/data_dirigenti_word_index.json',
                     file_hash=None)
     with open(path, 'r') as f:
         return json.load(f)
@@ -144,7 +144,7 @@ def get_label_index(path='data_dirigenti_label_index.json'):
         The word index dictionary.
     """
     path = get_file(path,
-                    origin='https://cs2.cloudspc.it:8079/swift/v1/daf-datasets/data_dirigenti_label_index.json',
+                    origin='https://github.com/fabiofumarola/daf-datasets/raw/master/data/data_dirigenti_label_index.json',
                     file_hash=None)
     with open(path, 'r') as f:
         return json.load(f)
