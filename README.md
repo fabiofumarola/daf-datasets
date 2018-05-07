@@ -24,7 +24,7 @@ First, clone daf-datasets using `git`:
 git clone https://github.com/fabiofumarola/daf-datasets.git
 ```
 
- Then, `cd` to the daf-dataset folder and run the install command:
+ Then, `cd` to the daf-datasets folder and run the install command:
 ```sh
 cd daf-datasets
 sudo python setup.py install
